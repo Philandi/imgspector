@@ -87,6 +87,22 @@ class Pixel
         $this->lightness = $hsl[2];
     }
 
+    /**
+     * Getter for our values
+     *
+     * @param  string $key
+     * @return mixed
+     */
+    public function __get($key)
+    {
+        if (method_exists($this, $key)) {
+            return $this->$key();
+        }
+        elseif (property_exists($this, $key)) {
+            return $this->$key;
+        }
+        return null;
+    }
 
     /**
      * Convert RGB to HSL
