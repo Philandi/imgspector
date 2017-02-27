@@ -100,4 +100,16 @@ class Image
             }
         }
     }
+
+    /**
+     * Returns the pixel at the given position
+     *
+     * @param  integer $x
+     * @param  integer $y
+     * @return Philandi\ImgSpector\Pixel;
+     */
+    public function getPixelAt($x, $y)
+    {
+        return $this->pixels[$x][$y];
+    }
 }
