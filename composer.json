@@ -1,0 +1,19 @@
+{
+    "name": "philandi/imgspector",
+    "description": "A PHP image analyzation tool",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Lawitschka",
+            "email": "pl@philandi.de"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Philandi\\ImgSpector\\": "src/"
+        }
+    }
+}
